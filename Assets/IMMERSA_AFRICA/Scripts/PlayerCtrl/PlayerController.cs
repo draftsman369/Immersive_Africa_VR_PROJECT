@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.InputSystem;          // NEW INPUT SYSTEM
+using UnityEngine.InputSystem;          // New Input System
 using UnityEngine.InputSystem.XR;
 
 [DisallowMultipleComponent]
@@ -35,6 +35,13 @@ public class PlayerController : MonoBehaviour
     [Tooltip("How far from the hit point we are allowed to search for a valid NavMesh position.")]
     [SerializeField] private float navMeshSampleRadius = 1.0f;
 
+    [Header("Rotation")]
+    [Tooltip("How fast the character rotates toward movement direction (degrees per second).")]
+    [SerializeField] private float rotationSpeed = 720f;
+
+    [Tooltip("Only rotate when the character is actually moving.")]
+    [SerializeField] private bool rotateOnlyWhenMoving = true;
+
     private void Reset()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -52,6 +59,9 @@ public class PlayerController : MonoBehaviour
 
         if (mainCamera == null)
             mainCamera = Camera.main;
+
+        // We handle rotation manually for snappier control
+        agent.updateRotation = false;
     }
 
     private void OnEnable()
@@ -72,6 +82,7 @@ public class PlayerController : MonoBehaviour
         HandleMouseClick();
         HandleVRClick();
         UpdateMovementAnimation();
+        UpdateRotation();
     }
 
     // ---------------------- INPUT ----------------------
@@ -129,10 +140,64 @@ public class PlayerController : MonoBehaviour
     {
         if (agent == null || animController == null) return;
 
-        bool hasPath = agent.hasPath && agent.remainingDistance > agent.stoppingDistance + 0.05f;
-        bool isMoving = hasPath && agent.velocity.sqrMagnitude > 0.001f;
-        float speed = agent.velocity.magnitude;
+        if (agent.pathPending)
+        {
+            animController.SetMoving(false, 0f);
+            return;
+        }
 
-        animController.SetMoving(isMoving, speed);
+        // Planar speed
+        Vector2 planarVel = new Vector2(agent.velocity.x, agent.velocity.z);
+        float rawSpeed = planarVel.magnitude;
+
+        const float startMoveSpeed = 0.05f;
+        const float stopMoveSpeed  = 0.02f;
+        const float stopBuffer     = 0.05f;
+
+        bool hasFarDestination = agent.remainingDistance > agent.stoppingDistance + stopBuffer;
+
+        bool isMoving = hasFarDestination && rawSpeed > startMoveSpeed;
+
+        if (!hasFarDestination && rawSpeed < stopMoveSpeed)
+        {
+            isMoving = false;
+        }
+
+        // Normalize speed 0–1 based on agent.speed (max desired speed)
+        float normalizedSpeed = 0f;
+        if (agent.speed > 0.01f)
+            normalizedSpeed = Mathf.Clamp01(rawSpeed / agent.speed);
+
+        animController.SetMoving(isMoving, normalizedSpeed);
+    }
+
+    private void UpdateRotation()
+    {
+        if (agent == null) return;
+
+        // Prefer actual velocity, fall back to desiredVelocity if needed
+        Vector3 moveDir = agent.velocity;
+        moveDir.y = 0f;
+
+        if (moveDir.sqrMagnitude < 0.0001f && agent.hasPath)
+        {
+            Vector3 desired = agent.desiredVelocity;
+            desired.y = 0f;
+            if (desired.sqrMagnitude > 0.0001f)
+                moveDir = desired;
+        }
+
+        bool hasDirection = moveDir.sqrMagnitude > 0.0001f;
+        if (!hasDirection) return;
+
+        if (rotateOnlyWhenMoving && agent.velocity.sqrMagnitude < 0.0001f)
+            return;
+
+        Quaternion targetRot = Quaternion.LookRotation(moveDir.normalized, Vector3.up);
+        transform.rotation = Quaternion.RotateTowards(
+            transform.rotation,
+            targetRot,
+            rotationSpeed * Time.deltaTime
+        );
     }
 }

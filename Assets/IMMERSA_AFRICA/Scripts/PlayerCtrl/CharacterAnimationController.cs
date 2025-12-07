@@ -6,15 +6,23 @@ public class CharacterAnimationController : MonoBehaviour
     [Header("Animator")]
     [SerializeField] private Animator animator;
 
-    [Header("Movement States")]
-    [Tooltip("State name for idle (e.g. 'Idle' or 'Base Layer.Idle').")]
+    [Header("Mode")]
+    [Tooltip("If true, use a single locomotion state with a blend tree driven by Speed.")]
+    [SerializeField] private bool useBlendTreeLocomotion = true;
+
+    [Tooltip("Name of the locomotion state that contains the blend tree (e.g. 'Locomotion' or 'Base Layer.Locomotion').")]
+    [SerializeField] private string locomotionStateName = "Locomotion";
+
+    [Header("Movement States (non-blend-tree mode)")]
+    [Tooltip("State name for idle (e.g. 'Idle' or 'Base Layer.Idle'). Only used if blend tree mode is OFF.")]
     [SerializeField] private string idleStateName = "Idle";
 
-    [Tooltip("State name for walking (e.g. 'Walk' or 'Base Layer.Walk').")]
+    [Tooltip("State name for walking (e.g. 'Walk' or 'Base Layer.Walk'). Only used if blend tree mode is OFF.")]
     [SerializeField] private string walkStateName = "Walk";
 
-    [Tooltip("Optional float parameter to drive blend trees (e.g. 'Speed'). Leave empty if not used.")]
-    [SerializeField] private string speedParameter = "";
+    [Header("Parameters")]
+    [Tooltip("Float parameter to drive blend trees (e.g. 'Speed'). Leave empty if not used.")]
+    [SerializeField] private string speedParameter = "Speed";
 
     [Tooltip("Crossfade time for switching between states.")]
     [SerializeField] private float crossFadeDuration = 0.1f;
@@ -63,19 +71,37 @@ public class CharacterAnimationController : MonoBehaviour
 
     /// <summary>
     /// Call this every frame to update movement animation.
+    /// speed is typically normalized (0–1) if using a blend tree.
     /// </summary>
     public void SetMoving(bool isMoving, float speed = 0f)
     {
         if (animator == null) return;
 
-        string targetState = isMoving ? walkStateName : idleStateName;
-        if (string.IsNullOrEmpty(targetState)) return;
-
-        // Update speed param for blend tree, if configured.
+        // Always update Speed if available
         if (hasSpeedParam)
         {
             animator.SetFloat(speedParamHash, speed);
         }
+
+        // ---------------- BLEND TREE LOCOMOTION MODE ----------------
+        if (useBlendTreeLocomotion)
+        {
+            if (string.IsNullOrEmpty(locomotionStateName))
+                return;
+
+            // We only need to ensure we're in the locomotion state.
+            // Idle/Walk/Run are handled inside the blend tree via Speed.
+            if (currentState == locomotionStateName)
+                return;
+
+            animator.CrossFade(locomotionStateName, crossFadeDuration);
+            currentState = locomotionStateName;
+            return;
+        }
+
+        // ---------------- SIMPLE IDLE/WALK MODE ----------------
+        string targetState = isMoving ? walkStateName : idleStateName;
+        if (string.IsNullOrEmpty(targetState)) return;
 
         if (currentState == targetState) return;
 
@@ -85,6 +111,7 @@ public class CharacterAnimationController : MonoBehaviour
 
     /// <summary>
     /// Generic helper if you want to play other animations later (attacks, emotes, etc).
+    /// This will override locomotion temporarily.
     /// </summary>
     public void PlayState(string stateName, float customCrossFade = -1f)
     {
