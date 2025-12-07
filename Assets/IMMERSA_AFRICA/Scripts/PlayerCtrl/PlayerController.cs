@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.InputSystem;          // New Input System
+using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
 
 [DisallowMultipleComponent]
@@ -42,6 +42,18 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Only rotate when the character is actually moving.")]
     [SerializeField] private bool rotateOnlyWhenMoving = true;
 
+    [Header("Target Visuals")]
+    [Tooltip("Prefab to show the current target point (e.g. a circle decal).")]
+    [SerializeField] private GameObject destinationMarkerPrefab;
+
+    [Tooltip("Vertical offset for the marker to avoid z-fighting.")]
+    [SerializeField] private float markerYOffset = 0.02f;
+
+    [Header("Debug")]
+    [SerializeField] private bool debugLogs = false;
+
+    private GameObject destinationMarkerInstance;
+
     private void Reset()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -62,25 +74,41 @@ public class PlayerController : MonoBehaviour
 
         // We handle rotation manually for snappier control
         agent.updateRotation = false;
+
+        // Create marker instance if prefab is assigned
+        if (destinationMarkerPrefab != null && destinationMarkerInstance == null)
+        {
+            destinationMarkerInstance = Instantiate(destinationMarkerPrefab);
+            destinationMarkerInstance.SetActive(false);
+        }
     }
 
     private void OnEnable()
     {
-        // Enable the VR trigger action if assigned
         if (vrClickAction.action != null)
+        {
             vrClickAction.action.Enable();
+            vrClickAction.action.performed += OnVrClickPerformed;
+        }
+        else if (debugLogs)
+        {
+            Debug.LogWarning("[PlayerController] vrClickAction.action is NULL. Assign an InputAction in the inspector.");
+        }
     }
 
     private void OnDisable()
     {
         if (vrClickAction.action != null)
+        {
+            vrClickAction.action.performed -= OnVrClickPerformed;
             vrClickAction.action.Disable();
+        }
     }
 
     private void Update()
     {
         HandleMouseClick();
-        HandleVRClick();
+        UpdateAimVisuals();    // marker follows aim (mouse or VR)
         UpdateMovementAnimation();
         UpdateRotation();
     }
@@ -91,32 +119,115 @@ public class PlayerController : MonoBehaviour
     {
         if (!enableMouseClick) return;
         if (mainCamera == null) return;
-
-        // New Input System mouse
         if (Mouse.current == null) return;
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Vector2 screenPos = Mouse.current.position.ReadValue();
-            Ray ray = mainCamera.ScreenPointToRay(screenPos);
+            if (!TryGetMouseRay(out Ray ray))
+                return;
+
+            if (debugLogs)
+                Debug.Log("[PlayerController] Mouse click raycast.");
+
             TryMoveAgentWithRay(ray);
         }
     }
 
-    private void HandleVRClick()
+    private void OnVrClickPerformed(InputAction.CallbackContext ctx)
     {
-        if (vrController == null) return;
-        if (vrClickAction.action == null) return;
-
-        // For a Button-type action, `triggered` is true on the frame it performs.
-        if (vrClickAction.action.triggered)
+        if (!TryGetVrRay(out Ray ray))
         {
-            Ray ray = new Ray(vrController.position, vrController.forward);
-            TryMoveAgentWithRay(ray);
+            if (debugLogs)
+                Debug.LogWarning("[PlayerController] VR click performed but vrController is NULL.");
+            return;
+        }
+
+        if (debugLogs)
+        {
+            Debug.Log("[PlayerController] VR trigger performed. Casting ray from controller.");
+            Debug.DrawRay(vrController.position, vrController.forward * maxRayDistance, Color.green, 1f);
+        }
+
+        TryMoveAgentWithRay(ray);
+    }
+
+    // ---------------------- RAY HELPERS ----------------------
+
+    private bool TryGetVrRay(out Ray ray)
+    {
+        if (vrController == null)
+        {
+            ray = default;
+            return false;
+        }
+
+        ray = new Ray(vrController.position, vrController.forward);
+        return true;
+    }
+
+    private bool TryGetMouseRay(out Ray ray)
+    {
+        if (mainCamera == null || Mouse.current == null)
+        {
+            ray = default;
+            return false;
+        }
+
+        Vector2 screenPos = Mouse.current.position.ReadValue();
+        ray = mainCamera.ScreenPointToRay(screenPos);
+        return true;
+    }
+
+    // ---------------------- AIM VISUALS (HOVER MARKER) ----------------------
+
+    private void UpdateAimVisuals()
+    {
+        Ray ray;
+        bool hasRay = false;
+
+        // EDITOR / DESKTOP: prefer mouse if enabled
+        if (enableMouseClick && TryGetMouseRay(out ray))
+        {
+            hasRay = true;
+        }
+        // VR: fallback to controller ray
+        else if (TryGetVrRay(out ray))
+        {
+            hasRay = true;
+        }
+
+        if (!hasRay)
+        {
+            SetMarkerActive(false);
+            return;
+        }
+
+        if (Physics.Raycast(ray, out RaycastHit hit, maxRayDistance, groundLayers, QueryTriggerInteraction.Ignore))
+        {
+            SetMarkerActive(true, hit.point);
+        }
+        else
+        {
+            SetMarkerActive(false);
         }
     }
 
-    // ---------------------- MOVEMENT ----------------------
+    private void SetMarkerActive(bool active, Vector3 hitPoint = default)
+    {
+        if (destinationMarkerInstance == null)
+            return;
+
+        destinationMarkerInstance.SetActive(active);
+
+        if (!active)
+            return;
+
+        Vector3 pos = hitPoint;
+        pos.y += markerYOffset;
+        destinationMarkerInstance.transform.position = pos;
+    }
+
+    // ---------------------- MOVEMENT & ANIM ----------------------
 
     private void TryMoveAgentWithRay(Ray ray)
     {
@@ -124,15 +235,24 @@ public class PlayerController : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit, maxRayDistance, groundLayers, QueryTriggerInteraction.Ignore))
         {
-            // Find closest point on NavMesh near the hit point
+            if (debugLogs)
+                Debug.Log($"[PlayerController] Ray hit {hit.collider.name} at {hit.point}");
+
             if (NavMesh.SamplePosition(hit.point, out NavMeshHit navHit, navMeshSampleRadius, NavMesh.AllAreas))
             {
                 agent.SetDestination(navHit.position);
+
+                if (debugLogs)
+                    Debug.Log($"[PlayerController] Moving to NavMesh position {navHit.position}");
             }
-            else
+            else if (debugLogs)
             {
-                Debug.Log("[PlayerController] No NavMesh near hit point.");
+                Debug.LogWarning("[PlayerController] Ray hit, but no NavMesh near hit point.");
             }
+        }
+        else if (debugLogs)
+        {
+            Debug.LogWarning("[PlayerController] Raycast from click/VR did not hit anything on groundLayers.");
         }
     }
 
@@ -146,7 +266,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        // Planar speed
         Vector2 planarVel = new Vector2(agent.velocity.x, agent.velocity.z);
         float rawSpeed = planarVel.magnitude;
 
@@ -163,7 +282,6 @@ public class PlayerController : MonoBehaviour
             isMoving = false;
         }
 
-        // Normalize speed 0–1 based on agent.speed (max desired speed)
         float normalizedSpeed = 0f;
         if (agent.speed > 0.01f)
             normalizedSpeed = Mathf.Clamp01(rawSpeed / agent.speed);
@@ -175,7 +293,6 @@ public class PlayerController : MonoBehaviour
     {
         if (agent == null) return;
 
-        // Prefer actual velocity, fall back to desiredVelocity if needed
         Vector3 moveDir = agent.velocity;
         moveDir.y = 0f;
 

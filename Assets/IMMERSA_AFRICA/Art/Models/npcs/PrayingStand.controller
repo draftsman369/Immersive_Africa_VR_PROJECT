@@ -42,7 +42,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -8914343865454095953, guid: b37a2efe3e7a6b04aad440f442c89d18, type: 3}
+  m_Motion: {fileID: -8914343865454095953, guid: e16344c0d40f7644d8ad147954a5a957, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -54,7 +54,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Praying
+  m_Name: PrayingStand
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
