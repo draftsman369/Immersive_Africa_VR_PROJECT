@@ -1,0 +1,2652 @@
+fileFormatVersion: 2
+guid: 670d7d23b2ef44753840ebb211ec55e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7120076249771945446
+    second: CookieRun Black Outline 120 SDF Atlas_0
+  - first:
+      213: 2756784307544279783
+    second: CookieRun Black Outline 120 SDF Atlas_1
+  - first:
+      213: 4614631451188550370
+    second: CookieRun Black Outline 120 SDF Atlas_2
+  - first:
+      213: -9094187588059526647
+    second: CookieRun Black Outline 120 SDF Atlas_3
+  - first:
+      213: -5987137654554448954
+    second: CookieRun Black Outline 120 SDF Atlas_4
+  - first:
+      213: 1772228136349499987
+    second: CookieRun Black Outline 120 SDF Atlas_5
+  - first:
+      213: -1850879581547701947
+    second: CookieRun Black Outline 120 SDF Atlas_6
+  - first:
+      213: -2912289371403646896
+    second: CookieRun Black Outline 120 SDF Atlas_7
+  - first:
+      213: -7752213564024569450
+    second: CookieRun Black Outline 120 SDF Atlas_8
+  - first:
+      213: -2142108130055813176
+    second: CookieRun Black Outline 120 SDF Atlas_9
+  - first:
+      213: -9203193349686887668
+    second: CookieRun Black Outline 120 SDF Atlas_10
+  - first:
+      213: -8913497667380785116
+    second: CookieRun Black Outline 120 SDF Atlas_11
+  - first:
+      213: 7386152694856556436
+    second: CookieRun Black Outline 120 SDF Atlas_12
+  - first:
+      213: -6629279843902292118
+    second: CookieRun Black Outline 120 SDF Atlas_13
+  - first:
+      213: -2696570850231222024
+    second: CookieRun Black Outline 120 SDF Atlas_14
+  - first:
+      213: -145960784498801878
+    second: CookieRun Black Outline 120 SDF Atlas_15
+  - first:
+      213: -1006908430386020573
+    second: CookieRun Black Outline 120 SDF Atlas_16
+  - first:
+      213: 2180245098498334223
+    second: CookieRun Black Outline 120 SDF Atlas_17
+  - first:
+      213: 5169895119653538377
+    second: CookieRun Black Outline 120 SDF Atlas_18
+  - first:
+      213: 4504079042514593245
+    second: CookieRun Black Outline 120 SDF Atlas_19
+  - first:
+      213: 8146826202239127399
+    second: CookieRun Black Outline 120 SDF Atlas_20
+  - first:
+      213: 4836690320483589282
+    second: CookieRun Black Outline 120 SDF Atlas_21
+  - first:
+      213: 4223249125679823761
+    second: CookieRun Black Outline 120 SDF Atlas_22
+  - first:
+      213: 7875385642860153534
+    second: CookieRun Black Outline 120 SDF Atlas_23
+  - first:
+      213: -3727128588778457175
+    second: CookieRun Black Outline 120 SDF Atlas_24
+  - first:
+      213: -3408679993467809628
+    second: CookieRun Black Outline 120 SDF Atlas_25
+  - first:
+      213: -5680479194137660433
+    second: CookieRun Black Outline 120 SDF Atlas_26
+  - first:
+      213: 3744196144274894921
+    second: CookieRun Black Outline 120 SDF Atlas_27
+  - first:
+      213: -5759941416363286750
+    second: CookieRun Black Outline 120 SDF Atlas_28
+  - first:
+      213: 207575402384101071
+    second: CookieRun Black Outline 120 SDF Atlas_29
+  - first:
+      213: -826524785730977679
+    second: CookieRun Black Outline 120 SDF Atlas_30
+  - first:
+      213: -2260278985792817951
+    second: CookieRun Black Outline 120 SDF Atlas_31
+  - first:
+      213: 4111725753862965044
+    second: CookieRun Black Outline 120 SDF Atlas_32
+  - first:
+      213: -7795301753884511135
+    second: CookieRun Black Outline 120 SDF Atlas_33
+  - first:
+      213: 4302826186519996508
+    second: CookieRun Black Outline 120 SDF Atlas_34
+  - first:
+      213: 466031804290725040
+    second: CookieRun Black Outline 120 SDF Atlas_35
+  - first:
+      213: -8121188432544378517
+    second: CookieRun Black Outline 120 SDF Atlas_36
+  - first:
+      213: -6590897853861023995
+    second: CookieRun Black Outline 120 SDF Atlas_37
+  - first:
+      213: -5004877553838425844
+    second: CookieRun Black Outline 120 SDF Atlas_38
+  - first:
+      213: 5152679649479164604
+    second: CookieRun Black Outline 120 SDF Atlas_39
+  - first:
+      213: -6079927516254800045
+    second: CookieRun Black Outline 120 SDF Atlas_40
+  - first:
+      213: 7953823819021507863
+    second: CookieRun Black Outline 120 SDF Atlas_41
+  - first:
+      213: -8593984856012706599
+    second: CookieRun Black Outline 120 SDF Atlas_42
+  - first:
+      213: 6271511620973786657
+    second: CookieRun Black Outline 120 SDF Atlas_43
+  - first:
+      213: 9137566228111468005
+    second: CookieRun Black Outline 120 SDF Atlas_44
+  - first:
+      213: -8545738883760205158
+    second: CookieRun Black Outline 120 SDF Atlas_45
+  - first:
+      213: 2963296190799598555
+    second: CookieRun Black Outline 120 SDF Atlas_46
+  - first:
+      213: 3940477568838453263
+    second: CookieRun Black Outline 120 SDF Atlas_47
+  - first:
+      213: 6574767711379989928
+    second: CookieRun Black Outline 120 SDF Atlas_48
+  - first:
+      213: 2755458611012807706
+    second: CookieRun Black Outline 120 SDF Atlas_49
+  - first:
+      213: -127214556609405640
+    second: CookieRun Black Outline 120 SDF Atlas_50
+  - first:
+      213: 7765968263604374110
+    second: CookieRun Black Outline 120 SDF Atlas_51
+  - first:
+      213: 73200697174836152
+    second: CookieRun Black Outline 120 SDF Atlas_52
+  - first:
+      213: 1013471288922248483
+    second: CookieRun Black Outline 120 SDF Atlas_53
+  - first:
+      213: -229098420821913044
+    second: CookieRun Black Outline 120 SDF Atlas_54
+  - first:
+      213: -8822547717932456906
+    second: CookieRun Black Outline 120 SDF Atlas_55
+  - first:
+      213: 8110992006317640300
+    second: CookieRun Black Outline 120 SDF Atlas_56
+  - first:
+      213: 9193821110545130303
+    second: CookieRun Black Outline 120 SDF Atlas_57
+  - first:
+      213: -5456035169860033025
+    second: CookieRun Black Outline 120 SDF Atlas_58
+  - first:
+      213: 1937236082273568310
+    second: CookieRun Black Outline 120 SDF Atlas_59
+  - first:
+      213: -5752744232313085791
+    second: CookieRun Black Outline 120 SDF Atlas_60
+  - first:
+      213: 2514488224807278820
+    second: CookieRun Black Outline 120 SDF Atlas_61
+  - first:
+      213: -5519589165985137427
+    second: CookieRun Black Outline 120 SDF Atlas_62
+  - first:
+      213: -6365445660853929107
+    second: CookieRun Black Outline 120 SDF Atlas_63
+  - first:
+      213: -8184670500603147161
+    second: CookieRun Black Outline 120 SDF Atlas_64
+  - first:
+      213: -6439122321756676395
+    second: CookieRun Black Outline 120 SDF Atlas_65
+  - first:
+      213: -3939089073036838313
+    second: CookieRun Black Outline 120 SDF Atlas_66
+  - first:
+      213: -7115287530811112906
+    second: CookieRun Black Outline 120 SDF Atlas_67
+  - first:
+      213: 6045194364068280650
+    second: CookieRun Black Outline 120 SDF Atlas_68
+  - first:
+      213: -3686168994429645031
+    second: CookieRun Black Outline 120 SDF Atlas_69
+  - first:
+      213: -8889588491979977292
+    second: CookieRun Black Outline 120 SDF Atlas_70
+  - first:
+      213: 6810233874161377739
+    second: CookieRun Black Outline 120 SDF Atlas_71
+  - first:
+      213: 3098328600660819572
+    second: CookieRun Black Outline 120 SDF Atlas_72
+  - first:
+      213: 2353503958727158164
+    second: CookieRun Black Outline 120 SDF Atlas_73
+  - first:
+      213: -5626733934664661813
+    second: CookieRun Black Outline 120 SDF Atlas_74
+  - first:
+      213: -6049393813493126555
+    second: CookieRun Black Outline 120 SDF Atlas_75
+  - first:
+      213: 2579571351009640485
+    second: CookieRun Black Outline 120 SDF Atlas_76
+  - first:
+      213: 7654651766141410369
+    second: CookieRun Black Outline 120 SDF Atlas_77
+  - first:
+      213: -6557824039866198909
+    second: CookieRun Black Outline 120 SDF Atlas_78
+  - first:
+      213: -972236611052325742
+    second: CookieRun Black Outline 120 SDF Atlas_79
+  - first:
+      213: 4095622818690220149
+    second: CookieRun Black Outline 120 SDF Atlas_80
+  - first:
+      213: 6590484660113455734
+    second: CookieRun Black Outline 120 SDF Atlas_81
+  - first:
+      213: 3511138760127940335
+    second: CookieRun Black Outline 120 SDF Atlas_82
+  - first:
+      213: -3464032477667661397
+    second: CookieRun Black Outline 120 SDF Atlas_83
+  - first:
+      213: 8041424559218097332
+    second: CookieRun Black Outline 120 SDF Atlas_84
+  - first:
+      213: -9110182718443857197
+    second: CookieRun Black Outline 120 SDF Atlas_85
+  - first:
+      213: 8659799753124363859
+    second: CookieRun Black Outline 120 SDF Atlas_86
+  - first:
+      213: -8267248059059484151
+    second: CookieRun Black Outline 120 SDF Atlas_87
+  - first:
+      213: 621232978945956545
+    second: CookieRun Black Outline 120 SDF Atlas_88
+  - first:
+      213: 3178409527589887898
+    second: CookieRun Black Outline 120 SDF Atlas_89
+  - first:
+      213: -3395997013106444776
+    second: CookieRun Black Outline 120 SDF Atlas_90
+  - first:
+      213: -266039245287076710
+    second: CookieRun Black Outline 120 SDF Atlas_91
+  - first:
+      213: 4186859745316187737
+    second: CookieRun Black Outline 120 SDF Atlas_92
+  - first:
+      213: 3146066275757294856
+    second: CookieRun Black Outline 120 SDF Atlas_93
+  - first:
+      213: 7284414844022815790
+    second: CookieRun Black Outline 120 SDF Atlas_94
+  - first:
+      213: 6629243707855277851
+    second: CookieRun Black Outline 120 SDF Atlas_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 913
+        width: 117
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12d5a6ef58603d90800000000000000
+      internalID: -7120076249771945446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 908
+        width: 107
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea4c8db8b0124620800000000000000
+      internalID: 2756784307544279783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 875
+        width: 74
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea50710bd67a0040800000000000000
+      internalID: 4614631451188550370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 954
+        width: 85
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a02fc5294fac180800000000000000
+      internalID: -9094187588059526647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 954
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbaaee360a69eca0800000000000000
+      internalID: -5987137654554448954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 953
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3528010b918389810800000000000000
+      internalID: 1772228136349499987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 930
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54953d3b3da5056e0800000000000000
+      internalID: -1850879581547701947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_7
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 928
+        width: 77
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05807562f387597d0800000000000000
+      internalID: -2912289371403646896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_8
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 902
+        width: 59
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691c95526da9a6490800000000000000
+      internalID: -7752213564024569450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 793
+        width: 105
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c70c8d4104b542e0800000000000000
+      internalID: -2142108130055813176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 790
+        width: 62
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bfca8b860b74080800000000000000
+      internalID: -9203193349686887668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 758
+        width: 75
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420de75e815ec4480800000000000000
+      internalID: -8913497667380785116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_12
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 837
+        width: 71
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f18b11eb2e08660800000000000000
+      internalID: 7386152694856556436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 837
+        width: 86
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ffb8bfa111004a0800000000000000
+      internalID: -6629279843902292118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_14
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 815
+        width: 74
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f08b48491bd39ad0800000000000000
+      internalID: -2696570850231222024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_15
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 813
+        width: 70
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23cfc8907179fdf0800000000000000
+      internalID: -145960784498801878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_16
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 807
+        width: 65
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32fbe7d0e1eb602f0800000000000000
+      internalID: -1006908430386020573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_17
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 803
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e974b9d59c14e10800000000000000
+      internalID: 2180245098498334223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 671
+        width: 78
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a89f458382fb740800000000000000
+      internalID: 5169895119653538377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_19
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 671
+        width: 82
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd52d598604b18e30800000000000000
+      internalID: 4504079042514593245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_20
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 720
+        width: 73
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fce4764475f0170800000000000000
+      internalID: 8146826202239127399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_21
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 721
+        width: 71
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac9ef878306f1340800000000000000
+      internalID: 4836690320483589282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_22
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 700
+        width: 82
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19bff1e34befb9a30800000000000000
+      internalID: 4223249125679823761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_23
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 698
+        width: 71
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba04ef348dfa4d60800000000000000
+      internalID: 7875385642860153534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_24
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 712
+        width: 62
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a738a1bb44964cc0800000000000000
+      internalID: -3727128588778457175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_25
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 753
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0de5c1b9fe1b0d0800000000000000
+      internalID: -3408679993467809628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_26
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 541
+        width: 92
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe37d67f442ea21b0800000000000000
+      internalID: -5680479194137660433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_27
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 538
+        width: 39
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94074ec3e8e06f330800000000000000
+      internalID: 3744196144274894921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_28
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 641
+        width: 76
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f1b9e9cc39010b0800000000000000
+      internalID: -5759941416363286750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_29
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 603
+        width: 78
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce863b8ab471e200800000000000000
+      internalID: 207575402384101071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_30
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 603
+        width: 72
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170037426189784f0800000000000000
+      internalID: -826524785730977679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_31
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 584
+        width: 72
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4f986ec30e1a0e0800000000000000
+      internalID: -2260278985792817951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_32
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 583
+        width: 81
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 437c3dcc9c8cf0930800000000000000
+      internalID: 4111725753862965044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_33
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 638
+        width: 61
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164fbba2b5681d390800000000000000
+      internalID: -7795301753884511135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_34
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 617
+        width: 69
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58e5c98e95b6bb30800000000000000
+      internalID: 4302826186519996508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_35
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 583
+        width: 70
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b478c4f47da77600800000000000000
+      internalID: 466031804290725040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_36
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 522
+        width: 77
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b615e24062ebb4f80800000000000000
+      internalID: -8121188432544378517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_37
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 486
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50faabd625d6884a0800000000000000
+      internalID: -6590897853861023995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_38
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 486
+        width: 76
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09722bb16a1b8ab0800000000000000
+      internalID: -5004877553838425844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_39
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 468
+        width: 81
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2079457def18740800000000000000
+      internalID: 5152679649479164604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_40
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 467
+        width: 72
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35772850322cf9ba0800000000000000
+      internalID: -6079927516254800045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_41
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 464
+        width: 79
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d51da4f98a16e60800000000000000
+      internalID: 7953823819021507863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_42
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 557
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dca64c6e480cb880800000000000000
+      internalID: -8593984856012706599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_43
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 530
+        width: 73
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12670e46792e80750800000000000000
+      internalID: 6271511620973786657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_44
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 533
+        width: 73
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5a03252182fce70800000000000000
+      internalID: 9137566228111468005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_45
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 408
+        width: 50
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92da3233cf676980800000000000000
+      internalID: -8545738883760205158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_46
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 408
+        width: 38
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3d0e07f2ebf1920800000000000000
+      internalID: 2963296190799598555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_47
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 403
+        width: 94
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08c208a8736fa630800000000000000
+      internalID: 3940477568838453263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_48
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 369
+        width: 108
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5238d16644e3b50800000000000000
+      internalID: 6574767711379989928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_49
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 463
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ca5b6f10b5d3620800000000000000
+      internalID: 2755458611012807706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_50
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 435
+        width: 74
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d9907e80b0c3ef0800000000000000
+      internalID: -127214556609405640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_51
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 418
+        width: 69
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a88196df246cb60800000000000000
+      internalID: 7765968263604374110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_52
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 276
+        width: 51
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3ca6075af040100800000000000000
+      internalID: 73200697174836152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_53
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 276
+        width: 67
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325944684c2901e00800000000000000
+      internalID: 1013471288922248483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_54
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 351
+        width: 75
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c229e48333412dcf0800000000000000
+      internalID: -229098420821913044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_55
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 351
+        width: 78
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634e3ba2893009580800000000000000
+      internalID: -8822547717932456906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_56
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 350
+        width: 70
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a88908148009070800000000000000
+      internalID: 8110992006317640300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_57
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 349
+        width: 96
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33a78ec693079f70800000000000000
+      internalID: 9193821110545130303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_58
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 348
+        width: 37
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5647a9be44844b0800000000000000
+      internalID: -5456035169860033025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_59
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 390
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6364cf1f3f172ea10800000000000000
+      internalID: 1937236082273568310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_60
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 341
+        width: 75
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a02d4d99952a20b0800000000000000
+      internalID: -5752744232313085791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_61
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 323
+        width: 37
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e85a87d7b145e220800000000000000
+      internalID: 2514488224807278820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_62
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 251
+        width: 72
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec7c57c5ea7663b0800000000000000
+      internalID: -5519589165985137427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_63
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 243
+        width: 99
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bffb3a5e469a7a0800000000000000
+      internalID: -6365445660853929107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_64
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 235
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c4eef3b853a6e80800000000000000
+      internalID: -8184670500603147161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_65
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 234
+        width: 78
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de97624d54a3a6a0800000000000000
+      internalID: -6439122321756676395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_66
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 233
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a3407bb5b8559c0800000000000000
+      internalID: -3939089073036838313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_67
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 233
+        width: 86
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632cc3b60bb614d90800000000000000
+      internalID: -7115287530811112906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_68
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 288
+        width: 38
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49bb7cce38d4e350800000000000000
+      internalID: 6045194364068280650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_69
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 246
+        width: 75
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f46f864d818dcc0800000000000000
+      internalID: -3686168994429645031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_70
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 264
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd02289d56d1a480800000000000000
+      internalID: -8889588491979977292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_71
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 142
+        width: 62
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1a8ba50afc28e50800000000000000
+      internalID: 6810233874161377739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_72
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 135
+        width: 52
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e32d752797ffa20800000000000000
+      internalID: 3098328600660819572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_73
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 127
+        width: 69
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499686d816359a020800000000000000
+      internalID: 2353503958727158164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_74
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 125
+        width: 72
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc44da25c43d9e1b0800000000000000
+      internalID: -5626733934664661813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_75
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 231
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56aeb40b06c3c0ca0800000000000000
+      internalID: -6049393813493126555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_76
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 150
+        width: 76
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52044b10a7a7cc320800000000000000
+      internalID: 2579571351009640485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_77
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 149
+        width: 39
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14cdc28a939ca3a60800000000000000
+      internalID: 7654651766141410369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_78
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 50
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3841244d7cdedf4a0800000000000000
+      internalID: -6557824039866198909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_79
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 62
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294b89014fbe182f0800000000000000
+      internalID: -972236611052325742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_80
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1
+        width: 51
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570c30a014396d830800000000000000
+      internalID: 4095622818690220149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_81
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 117
+        width: 96
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a39b761ea167b50800000000000000
+      internalID: 6590484660113455734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_82
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 117
+        width: 92
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6088a79121ab030800000000000000
+      internalID: 3511138760127940335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_83
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 117
+        width: 72
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9e33690d84defc0800000000000000
+      internalID: -3464032477667661397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_84
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 117
+        width: 66
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bcfb440801e89f60800000000000000
+      internalID: 8041424559218097332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_85
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 116
+        width: 83
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da504cd511229180800000000000000
+      internalID: -9110182718443857197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_86
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 115
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e3efe6ef9cd2870800000000000000
+      internalID: 8659799753124363859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_87
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 54
+        width: 102
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ac8b921b5d44d80800000000000000
+      internalID: -8267248059059484151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_88
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1
+        width: 69
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cad4d85a101f9800800000000000000
+      internalID: 621232978945956545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_89
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 112
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f56ba10aafb1c20800000000000000
+      internalID: 3178409527589887898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_90
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0
+        width: 94
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816b08795befed0d0800000000000000
+      internalID: -3395997013106444776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_91
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 0
+        width: 79
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cc95847b6de4cf0800000000000000
+      internalID: -266039245287076710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_92
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 0
+        width: 62
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e24f361c6ba1a30800000000000000
+      internalID: 4186859745316187737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_93
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 0
+        width: 37
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8058956fb9219ab20800000000000000
+      internalID: 3146066275757294856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_94
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 83
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cff86c4b0771560800000000000000
+      internalID: 7284414844022815790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieRun Black Outline 120 SDF Atlas_95
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 106
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f0530770ecffb50800000000000000
+      internalID: 6629243707855277851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CookieRun Black Outline 120 SDF Atlas_0: -7120076249771945446
+      CookieRun Black Outline 120 SDF Atlas_1: 2756784307544279783
+      CookieRun Black Outline 120 SDF Atlas_10: -9203193349686887668
+      CookieRun Black Outline 120 SDF Atlas_11: -8913497667380785116
+      CookieRun Black Outline 120 SDF Atlas_12: 7386152694856556436
+      CookieRun Black Outline 120 SDF Atlas_13: -6629279843902292118
+      CookieRun Black Outline 120 SDF Atlas_14: -2696570850231222024
+      CookieRun Black Outline 120 SDF Atlas_15: -145960784498801878
+      CookieRun Black Outline 120 SDF Atlas_16: -1006908430386020573
+      CookieRun Black Outline 120 SDF Atlas_17: 2180245098498334223
+      CookieRun Black Outline 120 SDF Atlas_18: 5169895119653538377
+      CookieRun Black Outline 120 SDF Atlas_19: 4504079042514593245
+      CookieRun Black Outline 120 SDF Atlas_2: 4614631451188550370
+      CookieRun Black Outline 120 SDF Atlas_20: 8146826202239127399
+      CookieRun Black Outline 120 SDF Atlas_21: 4836690320483589282
+      CookieRun Black Outline 120 SDF Atlas_22: 4223249125679823761
+      CookieRun Black Outline 120 SDF Atlas_23: 7875385642860153534
+      CookieRun Black Outline 120 SDF Atlas_24: -3727128588778457175
+      CookieRun Black Outline 120 SDF Atlas_25: -3408679993467809628
+      CookieRun Black Outline 120 SDF Atlas_26: -5680479194137660433
+      CookieRun Black Outline 120 SDF Atlas_27: 3744196144274894921
+      CookieRun Black Outline 120 SDF Atlas_28: -5759941416363286750
+      CookieRun Black Outline 120 SDF Atlas_29: 207575402384101071
+      CookieRun Black Outline 120 SDF Atlas_3: -9094187588059526647
+      CookieRun Black Outline 120 SDF Atlas_30: -826524785730977679
+      CookieRun Black Outline 120 SDF Atlas_31: -2260278985792817951
+      CookieRun Black Outline 120 SDF Atlas_32: 4111725753862965044
+      CookieRun Black Outline 120 SDF Atlas_33: -7795301753884511135
+      CookieRun Black Outline 120 SDF Atlas_34: 4302826186519996508
+      CookieRun Black Outline 120 SDF Atlas_35: 466031804290725040
+      CookieRun Black Outline 120 SDF Atlas_36: -8121188432544378517
+      CookieRun Black Outline 120 SDF Atlas_37: -6590897853861023995
+      CookieRun Black Outline 120 SDF Atlas_38: -5004877553838425844
+      CookieRun Black Outline 120 SDF Atlas_39: 5152679649479164604
+      CookieRun Black Outline 120 SDF Atlas_4: -5987137654554448954
+      CookieRun Black Outline 120 SDF Atlas_40: -6079927516254800045
+      CookieRun Black Outline 120 SDF Atlas_41: 7953823819021507863
+      CookieRun Black Outline 120 SDF Atlas_42: -8593984856012706599
+      CookieRun Black Outline 120 SDF Atlas_43: 6271511620973786657
+      CookieRun Black Outline 120 SDF Atlas_44: 9137566228111468005
+      CookieRun Black Outline 120 SDF Atlas_45: -8545738883760205158
+      CookieRun Black Outline 120 SDF Atlas_46: 2963296190799598555
+      CookieRun Black Outline 120 SDF Atlas_47: 3940477568838453263
+      CookieRun Black Outline 120 SDF Atlas_48: 6574767711379989928
+      CookieRun Black Outline 120 SDF Atlas_49: 2755458611012807706
+      CookieRun Black Outline 120 SDF Atlas_5: 1772228136349499987
+      CookieRun Black Outline 120 SDF Atlas_50: -127214556609405640
+      CookieRun Black Outline 120 SDF Atlas_51: 7765968263604374110
+      CookieRun Black Outline 120 SDF Atlas_52: 73200697174836152
+      CookieRun Black Outline 120 SDF Atlas_53: 1013471288922248483
+      CookieRun Black Outline 120 SDF Atlas_54: -229098420821913044
+      CookieRun Black Outline 120 SDF Atlas_55: -8822547717932456906
+      CookieRun Black Outline 120 SDF Atlas_56: 8110992006317640300
+      CookieRun Black Outline 120 SDF Atlas_57: 9193821110545130303
+      CookieRun Black Outline 120 SDF Atlas_58: -5456035169860033025
+      CookieRun Black Outline 120 SDF Atlas_59: 1937236082273568310
+      CookieRun Black Outline 120 SDF Atlas_6: -1850879581547701947
+      CookieRun Black Outline 120 SDF Atlas_60: -5752744232313085791
+      CookieRun Black Outline 120 SDF Atlas_61: 2514488224807278820
+      CookieRun Black Outline 120 SDF Atlas_62: -5519589165985137427
+      CookieRun Black Outline 120 SDF Atlas_63: -6365445660853929107
+      CookieRun Black Outline 120 SDF Atlas_64: -8184670500603147161
+      CookieRun Black Outline 120 SDF Atlas_65: -6439122321756676395
+      CookieRun Black Outline 120 SDF Atlas_66: -3939089073036838313
+      CookieRun Black Outline 120 SDF Atlas_67: -7115287530811112906
+      CookieRun Black Outline 120 SDF Atlas_68: 6045194364068280650
+      CookieRun Black Outline 120 SDF Atlas_69: -3686168994429645031
+      CookieRun Black Outline 120 SDF Atlas_7: -2912289371403646896
+      CookieRun Black Outline 120 SDF Atlas_70: -8889588491979977292
+      CookieRun Black Outline 120 SDF Atlas_71: 6810233874161377739
+      CookieRun Black Outline 120 SDF Atlas_72: 3098328600660819572
+      CookieRun Black Outline 120 SDF Atlas_73: 2353503958727158164
+      CookieRun Black Outline 120 SDF Atlas_74: -5626733934664661813
+      CookieRun Black Outline 120 SDF Atlas_75: -6049393813493126555
+      CookieRun Black Outline 120 SDF Atlas_76: 2579571351009640485
+      CookieRun Black Outline 120 SDF Atlas_77: 7654651766141410369
+      CookieRun Black Outline 120 SDF Atlas_78: -6557824039866198909
+      CookieRun Black Outline 120 SDF Atlas_79: -972236611052325742
+      CookieRun Black Outline 120 SDF Atlas_8: -7752213564024569450
+      CookieRun Black Outline 120 SDF Atlas_80: 4095622818690220149
+      CookieRun Black Outline 120 SDF Atlas_81: 6590484660113455734
+      CookieRun Black Outline 120 SDF Atlas_82: 3511138760127940335
+      CookieRun Black Outline 120 SDF Atlas_83: -3464032477667661397
+      CookieRun Black Outline 120 SDF Atlas_84: 8041424559218097332
+      CookieRun Black Outline 120 SDF Atlas_85: -9110182718443857197
+      CookieRun Black Outline 120 SDF Atlas_86: 8659799753124363859
+      CookieRun Black Outline 120 SDF Atlas_87: -8267248059059484151
+      CookieRun Black Outline 120 SDF Atlas_88: 621232978945956545
+      CookieRun Black Outline 120 SDF Atlas_89: 3178409527589887898
+      CookieRun Black Outline 120 SDF Atlas_9: -2142108130055813176
+      CookieRun Black Outline 120 SDF Atlas_90: -3395997013106444776
+      CookieRun Black Outline 120 SDF Atlas_91: -266039245287076710
+      CookieRun Black Outline 120 SDF Atlas_92: 4186859745316187737
+      CookieRun Black Outline 120 SDF Atlas_93: 3146066275757294856
+      CookieRun Black Outline 120 SDF Atlas_94: 7284414844022815790
+      CookieRun Black Outline 120 SDF Atlas_95: 6629243707855277851
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
