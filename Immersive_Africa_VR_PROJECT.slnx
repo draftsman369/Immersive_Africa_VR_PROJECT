@@ -15,5 +15,7 @@
   <Project Path="Boxophobic.PolyverseSkies.Scripts.csproj" />
   <Project Path="ToonyColorsPro.Demo.Editor.csproj" />
   <Project Path="Boxophobic.PolyverseSkies.Editor.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.Editor.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj" />
 </Solution>

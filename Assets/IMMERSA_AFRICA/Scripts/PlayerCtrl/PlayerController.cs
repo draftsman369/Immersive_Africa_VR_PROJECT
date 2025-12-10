@@ -18,11 +18,33 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Transform of the VR controller that will cast the ray (e.g. right-hand controller).")]
     [SerializeField] private Transform vrController;
 
+    [Header("XR Hands Poke")]
+    [Tooltip("Right-hand index fingertip transform (from XR Hands rig).")]
+    [SerializeField] private Transform rightIndexTip;
+
+    [Tooltip("Left-hand index fingertip transform (optional).")]
+    [SerializeField] private Transform leftIndexTip;
+
+    [Tooltip("Enable hand poke navigation using XR Hands.")]
+    [SerializeField] private bool useHandPokeForVR = true;
+
+    [Tooltip("Length of the ray cast downward from the fingertip.")]
+    [SerializeField] private float handRayLength = 0.20f;
+
+    [Tooltip("Max distance from fingertip to ground to count as a valid 'touch'.")]
+    [SerializeField] private float maxHandPokeDistance = 0.05f;
+
+    [Tooltip("Minimum downward speed (m/s) to register a 'tap' when touching the ground.")]
+    [SerializeField] private float minDownwardSpeedForPoke = 0.2f;
+
+    [Tooltip("Cooldown between pokes, to avoid spam (seconds).")]
+    [SerializeField] private float pokeCooldown = 0.3f;
+
     [Header("Input Settings (New Input System)")]
     [Tooltip("Use mouse left-click to move in Editor/Desktop (New Input System only).")]
     [SerializeField] private bool enableMouseClick = true;
 
-    [Tooltip("Input Action used for the VR trigger (Button action bound to your controller trigger).")]
+    [Tooltip("Input Action used for VR trigger with controllers (NOT used for hand poke).")]
     [SerializeField] private InputActionProperty vrClickAction;
 
     [Header("Raycast Settings")]
@@ -54,6 +76,13 @@ public class PlayerController : MonoBehaviour
 
     private GameObject destinationMarkerInstance;
 
+    // Hand poke state
+    private Vector3 _lastRightTipPos;
+    private Vector3 _lastLeftTipPos;
+    private bool _rightWasTouchingLastFrame;
+    private bool _leftWasTouchingLastFrame;
+    private float _lastPokeTime;
+
     private void Reset()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -81,6 +110,10 @@ public class PlayerController : MonoBehaviour
             destinationMarkerInstance = Instantiate(destinationMarkerPrefab);
             destinationMarkerInstance.SetActive(false);
         }
+
+        // Initialize last hand positions so velocity doesn't spike on first frame
+        if (rightIndexTip != null) _lastRightTipPos = rightIndexTip.position;
+        if (leftIndexTip != null)  _lastLeftTipPos  = leftIndexTip.position;
     }
 
     private void OnEnable()
@@ -92,7 +125,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (debugLogs)
         {
-            Debug.LogWarning("[PlayerController] vrClickAction.action is NULL. Assign an InputAction in the inspector.");
+            Debug.LogWarning("[PlayerController] vrClickAction.action is NULL. Assign an InputAction in the inspector if you use controllers.");
         }
     }
 
@@ -108,7 +141,8 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         HandleMouseClick();
-        UpdateAimVisuals();    // marker follows aim (mouse or VR)
+        UpdateHandPoke();      // NEW: handle finger tapping ground
+        UpdateAimVisuals();    // marker follows aim (mouse / finger / VR)
         UpdateMovementAnimation();
         UpdateRotation();
     }
@@ -133,8 +167,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // This is now only for controller-based click.
     private void OnVrClickPerformed(InputAction.CallbackContext ctx)
     {
+        if (useHandPokeForVR)
+        {
+            // When using hand poke, we don't need this for movement.
+            // You can either ignore it, or keep it as a fallback for controllers.
+            if (debugLogs)
+                Debug.Log("[PlayerController] VR click performed, but hand poke is primary. Controller click fallback only.");
+        }
+
         if (!TryGetVrRay(out Ray ray))
         {
             if (debugLogs)
@@ -142,13 +185,148 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (debugLogs)
+        if (debugLogs && vrController != null)
         {
             Debug.Log("[PlayerController] VR trigger performed. Casting ray from controller.");
             Debug.DrawRay(vrController.position, vrController.forward * maxRayDistance, Color.green, 1f);
         }
 
         TryMoveAgentWithRay(ray);
+    }
+
+    // ---------------------- XR HAND POKE ----------------------
+
+    private void UpdateHandPoke()
+    {
+        if (!useHandPokeForVR || agent == null)
+            return;
+
+        if (Time.deltaTime <= 0f)
+            return;
+
+        // Process each hand; whichever successfully pokes first wins.
+        bool rightPoked = ProcessFingerPoke(
+            rightIndexTip,
+            ref _lastRightTipPos,
+            ref _rightWasTouchingLastFrame
+        );
+
+        if (rightPoked) return;
+
+        bool leftPoked = ProcessFingerPoke(
+            leftIndexTip,
+            ref _lastLeftTipPos,
+            ref _leftWasTouchingLastFrame
+        );
+    }
+
+    /// <summary>
+    /// Handles poke detection for a single fingertip:
+    ///  - Raycast down from fingertip
+    ///  - If just started touching & moving downward fast enough & cooldown passed -> move agent.
+    /// </summary>
+    private bool ProcessFingerPoke(Transform fingerTip, ref Vector3 lastPos, ref bool wasTouchingLastFrame)
+    {
+        if (fingerTip == null)
+            return false;
+
+        Vector3 currentPos = fingerTip.position;
+        Vector3 velocity = (currentPos - lastPos) / Time.deltaTime;
+        lastPos = currentPos;
+
+        Vector3 origin = currentPos;
+        Vector3 direction = Vector3.down;
+
+        if (debugLogs)
+            Debug.DrawRay(origin, direction * handRayLength, Color.cyan, 0.1f);
+
+        bool isTouching = false;
+        Vector3 hitPoint = default;
+        float hitDistance = 0f;
+
+        if (Physics.Raycast(origin, direction, out RaycastHit hit, handRayLength, groundLayers, QueryTriggerInteraction.Ignore))
+        {
+            hitDistance = hit.distance;
+
+            if (hit.distance <= maxHandPokeDistance)
+            {
+                isTouching = true;
+                hitPoint = hit.point;
+
+                if (debugLogs)
+                    Debug.Log($"[PlayerController] Finger touching {hit.collider.name} at {hit.point} (dist={hit.distance})");
+            }
+        }
+
+        bool justTouched = isTouching && !wasTouchingLastFrame;
+        wasTouchingLastFrame = isTouching;
+
+        if (!justTouched)
+            return false;
+
+        // Cooldown so every tiny tap isn't multiple moves
+        if (Time.time - _lastPokeTime < pokeCooldown)
+            return false;
+
+        // Require downward motion to feel like an intentional tap
+        if (velocity.y >= -minDownwardSpeedForPoke)
+        {
+            if (debugLogs)
+                Debug.Log($"[PlayerController] Touch ignored (downward speed too low: {velocity.y}).");
+            return false;
+        }
+
+        if (debugLogs)
+            Debug.Log($"[PlayerController] POKE! Moving to {hitPoint}, velocityY={velocity.y}");
+
+        _lastPokeTime = Time.time;
+        TryMoveAgentToPoint(hitPoint);
+        return true;
+    }
+
+    /// <summary>
+    /// For marker hover: get the closest ground point under either fingertip.
+    /// </summary>
+    private bool TryGetHandHoverGroundPoint(out Vector3 groundPoint)
+    {
+        groundPoint = default;
+
+        bool found = false;
+        float bestDist = float.MaxValue;
+        Vector3 bestPoint = default;
+
+        CheckFingerHover(rightIndexTip, ref found, ref bestDist, ref bestPoint);
+        CheckFingerHover(leftIndexTip, ref found, ref bestDist, ref bestPoint);
+
+        if (found)
+        {
+            groundPoint = bestPoint;
+            return true;
+        }
+
+        return false;
+    }
+
+    private void CheckFingerHover(Transform fingerTip, ref bool found, ref float bestDist, ref Vector3 bestPoint)
+    {
+        if (fingerTip == null)
+            return;
+
+        Vector3 origin = fingerTip.position;
+        Vector3 direction = Vector3.down;
+
+        if (debugLogs)
+            Debug.DrawRay(origin, direction * handRayLength, Color.yellow, 0.1f);
+
+        if (Physics.Raycast(origin, direction, out RaycastHit hit, handRayLength, groundLayers, QueryTriggerInteraction.Ignore))
+        {
+            if (hit.distance < bestDist)
+            {
+                found = true;
+                bestDist = hit.distance;
+                bestPoint = hit.point;
+            }
+        }
     }
 
     // ---------------------- RAY HELPERS ----------------------
@@ -182,6 +360,14 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateAimVisuals()
     {
+        // 1) XR Hands hover under fingertip
+        if (useHandPokeForVR && TryGetHandHoverGroundPoint(out Vector3 handHoverPoint))
+        {
+            SetMarkerActive(true, handHoverPoint);
+            return;
+        }
+
+        // 2) Fallback: mouse / VR controller ray
         Ray ray;
         bool hasRay = false;
 
@@ -238,21 +424,31 @@ public class PlayerController : MonoBehaviour
             if (debugLogs)
                 Debug.Log($"[PlayerController] Ray hit {hit.collider.name} at {hit.point}");
 
-            if (NavMesh.SamplePosition(hit.point, out NavMeshHit navHit, navMeshSampleRadius, NavMesh.AllAreas))
-            {
-                agent.SetDestination(navHit.position);
-
-                if (debugLogs)
-                    Debug.Log($"[PlayerController] Moving to NavMesh position {navHit.position}");
-            }
-            else if (debugLogs)
-            {
-                Debug.LogWarning("[PlayerController] Ray hit, but no NavMesh near hit point.");
-            }
+            TryMoveAgentToPoint(hit.point);
         }
         else if (debugLogs)
         {
             Debug.LogWarning("[PlayerController] Raycast from click/VR did not hit anything on groundLayers.");
+        }
+    }
+
+    private void TryMoveAgentToPoint(Vector3 worldPoint)
+    {
+        if (agent == null) return;
+
+        if (NavMesh.SamplePosition(worldPoint, out NavMeshHit navHit, navMeshSampleRadius, NavMesh.AllAreas))
+        {
+            agent.SetDestination(navHit.position);
+
+            if (debugLogs)
+                Debug.Log($"[PlayerController] Moving to NavMesh position {navHit.position}");
+
+            // Optionally keep marker snapped on final destination
+            SetMarkerActive(true, navHit.position);
+        }
+        else if (debugLogs)
+        {
+            Debug.LogWarning("[PlayerController] Hit point is not near any NavMesh.");
         }
     }
 
